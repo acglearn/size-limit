@@ -29,7 +29,7 @@ default_range "1-3"
   the project size calculation.
 * **default_range**: диапазон строк по умолчанию
 
-Путь по умолчанию: **cli.conf"
+Путь по умолчанию: **cli.conf**
 
 
 ## Использование
