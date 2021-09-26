@@ -4,7 +4,7 @@
 
 ### Из исходников
 
-1. Установить докер
+1. Установить Docker
 2. Склонировать репозиторий
 3. Из директории склонированного репозитория запустить команду
 
@@ -21,21 +21,24 @@ docker push acglearn/cli:latest
 
 Приложение конфигурируется с помощью одного конфиг-файла вида:
 ```txt
-word_separator :
-default_range 1-3
+word_separator ":"
+default_range "1-3"
 ```
 
-
-
-* **ignore**: an array of files and dependencies to exclude from
+* **word_separator**: используемый разделитель слов (по умолчанию "пробел")
   the project size calculation.
-* **modifyWebpackConfig**: (.size-limit.js only) function that can be used to 
-  do last-minute changes to the webpack config, like adding a plugin.
+* **default_range**: диапазон строк по умолчанию
+
+Путь по умолчанию: **cli.conf"
 
 
+## Использование
 
-## Plugins and Presets
+Запустить приложение 
 
+```sh
+docker run 
+```
 Plugins:
 
 * `@size-limit/file` checks the size of files with Gzip, Brotli
